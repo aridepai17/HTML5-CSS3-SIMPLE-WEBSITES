@@ -1,5 +1,9 @@
 /* Importing Google Fonts */
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+=======
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+>>>>>>> e12ee59da0be2fe8b428d8399a32e29f03af3e0d
 
 /* Root-level variables */
 :root {
