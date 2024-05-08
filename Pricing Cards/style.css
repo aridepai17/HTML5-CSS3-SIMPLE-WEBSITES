@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Display Heavy;
+}
+
+body {
+    background-color: rgb(55, 173, 220)
+}
+
+.priceheading {
+    text-align: center;
+    font-size: 4rem;
+    margin: 2.5rem 0;
+    color: #fff;
+}
+
+
+.pricingcontainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pricingitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem 2rem 5rem;
+    background-color: white;
+    margin: 0 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s all linear;
+    margin-bottom: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.pricingitem:hover {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 1rem 0rem #fff;
+}
+
+.pricingitem li {
+    list-style: none;
+}
+
+.pricing {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: skyblue;
+}
+
+.pricingkit {
+    font-size: 1rem;
+    background-color: skyblue;
+    padding: .7rem 1.5rem;
+    border-radius: 2  2 4rem 4rem;
+}
+
+.pricingitem:hover .pricingkit {
+    box-shadow: 0 0 0 50rem skyblue;
+}
+
+.pricingitem:hover .orderbtn {
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.pricingitem:hover .pricing {
+    color: black;
+    transition: .5s linear;
+}
+
+.offers li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.orderbtn {
+    border: none;
+    border: 2px solid skyblue;
+    background-color: transparent;
+    color: skyblue;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: .7rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.orderbtn:hover {
+    background-color: skyblue;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
