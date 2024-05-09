@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head> 
+    <title>SIMPLE CALCULATOR</title> 
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <h2>SIMPLE CALCULATOR</h2>
+    <form name="calc">
+        <table border="9">
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="rpai" value="" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><strong><input type="button" value="0" onclick="calc.display.value += '0'"></strong></td>
+                <td><strong><input type="button" value="1" onclick="calc.display.value += '1'"></strong></td>
+                <td><strong><input type="button" value="2" onclick="calc.display.value += '2'"></strong></td>
+                <td><strong><input type="button" class="operator" name="plus" value="+" onclick="calc.display.value += '+'"></strong></td>
+            </tr>
+            <tr>
+                <td><strong><input type="button" value="3" onclick="calc.display.value += '3'"></strong></td>
+                <td><strong><input type="button" value="4" onclick="calc.display.value += '4'"></strong></td>
+                <td><strong><input type="button" value="5" onclick="calc.display.value += '5'"></strong></td>
+                <td><strong><input type="button" class="operator" name="minus" value="-" onclick="calc.display.value += '-'"></strong></td>
+            </tr>
+            <tr>
+                <td><strong><input type="button" value="6" onclick="calc.display.value += '6'"></strong></td>
+                <td><strong><input type="button" value="7" onclick="calc.display.value += '7'"></strong></td>
+                <td><strong><input type="button" value="8" onclick="calc.display.value += '8'"></strong></td>
+                <td><strong><input type="button" class="operator" name="multiply" value="*" onclick="calc.display.value += '*'"></strong></td>
+            </tr>
+            <tr>
+                <td><strong><input type="button" value="9" onclick="calc.display.value += '9'"></strong></td>
+                <td><strong><input type="button" id="clear" name="clear" value="C" onclick="calc.display.value = ''"></strong></td>
+                <td><strong><input type="button" class="operator" name="equal" value="=" onclick="calc.display.value = eval(calc.display.value)"></strong></td>
+                <td><strong><input type="button" class="operator" name="divide" value="/" onclick="calc.display.value += '/'"></strong></td>
+            </tr>
+        </table>
+    </form>
+</body>
