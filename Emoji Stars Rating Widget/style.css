@@ -1,0 +1,183 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF Pro Display Black;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#FED151, #DE981F);
+}
+
+.wrapper{
+  background: #000;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.wrapper .content{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper .outer{
+  height: 135px;
+  width: 135px;
+  overflow: hidden;
+}
+
+.outer .emojis{
+  height: 500%;
+  display: flex;
+  flex-direction: column;
+}
+
+.outer .emojis li{
+  height: 20%;
+  width: 100%;
+  list-style: none;
+  transition: ease-in-out 0.25s;
+}
+
+.outer li img{
+  height: 100%;
+  width: 100%;
+}
+
+#star2:checked ~ .content .emojis .slideimg{
+  margin-top: -135px;
+}
+
+#star3:checked ~ .content .emojis .slideimg{
+  margin-top: -270px;
+}
+
+#star4:checked ~ .content .emojis .slideimg{
+  margin-top: -405px;
+}
+
+#star5:checked ~ .content .emojis .slideimg{
+  margin-top: -540px;
+}
+
+.wrapper .stars{
+  margin-top: 30px;
+}
+.stars label{
+  font-size: 30px;
+  margin: 0 3px;
+  color: #ccc;
+}
+
+#star1:hover ~ .content .stars .star1,
+#star1:checked ~ .content .stars .star1,
+
+#star2:hover ~ .content .stars .star1,
+#star2:hover ~ .content .stars .star2,
+#star2:checked ~ .content .stars .star1,
+#star2:checked ~ .content .stars .star2,
+
+#star3:hover ~ .content .stars .star1,
+#star3:hover ~ .content .stars .star2,
+#star3:hover ~ .content .stars .star3,
+#star3:checked ~ .content .stars .star1,
+#star3:checked ~ .content .stars .star2,
+#star3:checked ~ .content .stars .star3,
+
+#star4:hover ~ .content .stars .star1,
+#star4:hover ~ .content .stars .star2,
+#star4:hover ~ .content .stars .star3,
+#star4:hover ~ .content .stars .star4,
+#star4:checked ~ .content .stars .star1,
+#star4:checked ~ .content .stars .star2,
+#star4:checked ~ .content .stars .star3,
+#star4:checked ~ .content .stars .star4,
+
+#star5:hover ~ .content .stars .star1,
+#star5:hover ~ .content .stars .star2,
+#star5:hover ~ .content .stars .star3,
+#star5:hover ~ .content .stars .star4,
+#star5:hover ~ .content .stars .star5,
+#star5:checked ~ .content .stars .star1,
+#star5:checked ~ .content .stars .star2,
+#star5:checked ~ .content .stars .star3,
+#star5:checked ~ .content .stars .star4,
+#star5:checked ~ .content .stars .star5{
+  color: #fd4;
+}
+
+.wrapper .footer{
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer span{
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.footer .text::before{
+  content: "Rate your experience";
+}
+
+.footer .numb::before{
+  content: "0 out of 5";
+}
+
+#star1:checked ~ .footer .text::before{
+  content: "I hate it.";
+}
+
+#star1:checked ~ .footer .numb::before{
+  content: "1 out of 5";
+}
+
+#star2:checked ~ .footer .text::before{
+  content: "I don't like it.";
+}
+
+#star2:checked ~ .footer .numb::before{
+  content: "2 out of 5";
+}
+
+#star3:checked ~ .footer .text::before{
+  content: "I just like it.";
+}
+
+#star3:checked ~ .footer .numb::before{
+  content: "3 out of 5";
+}
+#star4:checked ~ .footer .text::before{
+  content: "This is awesome.";
+}
+
+#star4:checked ~ .footer .numb::before{
+  content: "4 out of 5";
+}
+
+#star5:checked ~ .footer .text::before{
+  content: "The Best!";
+}
+#star5:checked ~ .footer .numb::before{
+  content: "5 out of 5";
+}
+
+input[type="radio"]{
+  display: none;
+}
