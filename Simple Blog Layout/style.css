@@ -1,0 +1,48 @@
+body{
+    font-family: SF Pro Display Heavy;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header{
+    background-color: #0c670c;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main{
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article{
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+article h2{
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+article p{
+    color: #666666;
+    line-height: 1.6;
+}
