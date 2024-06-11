@@ -1,0 +1,28 @@
+.ball{
+    --size: 20px;
+    --timing: 0.7s;
+    --displace: 70px;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    background: black;
+    margin-right: var(--displace);
+    animation: animationload var(--timing) infinite alternate
+    cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding: 5px;
+    overflow: hidden;
+    margin-left: 90vh;
+    margin-top: 50vh;
+}
+
+@keyframes animationload{
+    0%{
+        background: #4284f3;
+        transform: translateX(var(--displace));
+    }
+    100%{
+        background: #ea4335;
+        transform: translateX(00px);
+    }
+}
+
