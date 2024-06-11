@@ -1,0 +1,25 @@
+.codeloader{
+    color: black;
+    font-family: SF Pro Display Heavy;
+    font-weight: 30px;
+    font-size: 200px;
+    opacity: 0.9;
+    margin-top: 300px;
+    margin-left: 760px;
+}
+
+.codeloader span{
+    display: inline-block;
+    animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.codeloader span:nth-child(odd){
+    animation-delay: 0.4s;
+}
+
+@keyframes pulse{
+    to{
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+}
