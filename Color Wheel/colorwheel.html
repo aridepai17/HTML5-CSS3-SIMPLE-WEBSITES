@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Wheel</title>
+<style>
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#wheel{
+    margin: auto;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: white;
+    animation: spin 2s;
+    background-image: conic-gradient(red, orange, yellow, green, blue, indigo, violet, red );
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+</style>
+</head>
+<body>
+    <div id="wheel"></div>
+</body>
+</html>
