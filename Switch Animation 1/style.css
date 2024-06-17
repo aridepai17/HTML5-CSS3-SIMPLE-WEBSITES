@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;
+    width: 70px;
+    height: 58px;
+}
+
+.labelcheck{
+    display: none;
+}
+
+.labelcheck1{
+    width: 70px;
+    height: 58px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.labelcheck1 div{
+    width: 70px;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+}
+
+.line1{
+    transition: all 0.3s;
+}
+
+.line2{
+    margin: 18px 0 0 0;
+    transition: 0.3s;
+}
+
+.line3{
+    margin: 36px 0 0 0;
+    transition: 0.3s;
+}
+
+#labelcheck:checked + .labelcheck1 .line1{
+    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+    border-radius: 50px 50px 50px 0;
+}
+
+#labelcheck:checked + .labelcheck1 .line3{
+    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+    border-radius: 0 50px 50px 50px;
+}
+
+#labelcheck:checked + .labelcheck1 .line2{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 45px;
+}
