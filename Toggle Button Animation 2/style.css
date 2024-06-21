@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    font-weight: 900;
+    font-size: 6rem;
+    font-family: LEMON MILK;
+    color: rgb(252, 255, 209);
+}
+
+.toggle{
+    width: 60px;
+    height: 155px;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 1.7rem;
+    padding: .25rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: background-color 300ms 300ms;
+}
+
+.togglecircle{
+    width: 50px;
+    height: 50px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50%;
+    margin-top: calc(155px - (.25rem * 2) - 50px);
+    transition: margin 500ms ease-in-out;
+}
+
+.toggletext{
+    display: flex;
+    flex-direction: column;
+    line-height: .8;
+}
+
+#check:checked + .toggle > .togglecircle{
+    margin-top: 0;
+}
+
+#check:checked + .toggle{
+    background-color: rgb(137, 135, 145);
+}
